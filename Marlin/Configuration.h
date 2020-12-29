@@ -760,7 +760,7 @@
  */
 #define DEFAULT_MAX_FEEDRATE \
   {                          \
-    300, 300, 5, 25          \
+    150, 150, 5, 25          \
   }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
@@ -994,7 +994,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    -10, 0, -1.4               \
+    -28, 0, -1.4               \
   }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1002,7 +1002,7 @@
 #define MIN_PROBE_EDGE 10
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 8000
+#define XY_PROBE_SPEED 4000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
@@ -1275,7 +1275,7 @@
 /**
    * Enable the G26 Mesh Validation Pattern tool.
    */
-//#define G26_MESH_VALIDATION
+#define G26_MESH_VALIDATION
 #if ENABLED(G26_MESH_VALIDATION)
 #define MESH_TEST_NOZZLE_SIZE 0.4  // (mm) Diameter of primary nozzle.
 #define MESH_TEST_LAYER_HEIGHT 0.2 // (mm) Default layer height for the G26 Mesh Validation Tool.
