@@ -750,7 +750,7 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    40, 40, 400, 415                \
+    42, 42, 400, 415                \
   }
 
 /**
