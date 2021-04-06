@@ -750,7 +750,7 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    42, 42, 400, 415                \
+    80, 80, 400, 415                \
   }
 
 /**
@@ -798,7 +798,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION 3000         // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION 500         // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION 3000 // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION 3000  // X, Y, Z acceleration for travel (non printing) moves
 
@@ -994,7 +994,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    -28, 0, -1.4               \
+    28, 0, -1                  \
   }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1002,7 +1002,7 @@
 #define MIN_PROBE_EDGE 10
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 4000
+#define XY_PROBE_SPEED 8000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
